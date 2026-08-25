@@ -1,102 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yuppa — Ürün Analizi</title>
-<style>
-  :root{
-    --mint:#E7F0EA; --mint-2:#CFE3D6; --ink:#1E3A2B; --muted:#41614F;
-    --card:#ffffff; --line:#DCE8E0; --accent:#E8722C;
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    color:var(--ink); background:linear-gradient(160deg,var(--mint),var(--mint-2));
-    min-height:100vh; line-height:1.65;
-  }
-  .wrap{max-width:760px; margin:0 auto; padding:48px 24px 64px}
-  header{text-align:center; margin-bottom:44px}
-  .logo{width:132px; height:132px; border-radius:30px; background:#fff;
-        display:flex; overflow:hidden; align-items:center; justify-content:center; margin:0 auto 20px;
-        box-shadow:0 8px 28px rgba(30,58,43,.13); font-size:74px; line-height:1}
-  h1{font-size:2.1rem; margin:0 0 8px; letter-spacing:-.02em}
-  .tag{color:var(--muted); font-size:1.06rem; margin:0}
-  .card{background:var(--card); border:1px solid var(--line); border-radius:16px;
-        padding:26px 28px; margin-bottom:20px; box-shadow:0 2px 10px rgba(30,58,43,.05)}
-  h2{font-size:1.18rem; margin:0 0 14px}
-  ul{margin:0; padding-left:20px}
-  li{margin-bottom:9px}
-  .links{display:flex; overflow:hidden; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:8px}
-  .links a{
-    display:inline-block; padding:11px 20px; border-radius:11px; text-decoration:none;
-    background:var(--ink); color:#fff; font-weight:600; font-size:.95rem;
-  }
-  .links a.ghost{background:#fff; color:var(--ink); border:1px solid var(--line)}
-  .note{background:#FFF7ED; border:1px solid #FCD9B6; border-radius:12px;
-        padding:16px 18px; font-size:.92rem; color:#7A4A18; margin-top:4px}
-  footer{text-align:center; color:var(--muted); font-size:.87rem; margin-top:36px}
-  footer a{color:var(--muted)}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F1EEE8">
+  <meta name="description" content="Gıda ve kozmetik ürünlerinin fotoğrafını çek. Yuppa içerikleri, besin değerlerini ve sana uygunluğunu anlaşılır bir değerlendirmeye dönüştürür.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yuppa — Her ürünü bir bakışta anla">
+  <meta property="og:description" content="Gıda ve kozmetik ürünlerinin fotoğrafını çek. Yuppa içerikleri, besin değerlerini ve sana uygunluğunu anlaşılır bir değerlendirmeye dönüştürür.">
+  <meta property="og:image" content="https://mehmetsancaktutan.github.io/icindekiler-site/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yuppa — Her ürünü bir bakışta anla">
+  <meta name="twitter:description" content="Gıda ve kozmetik ürünlerinin fotoğrafını çek. Yuppa içerikleri, besin değerlerini ve sana uygunluğunu anlaşılır bir değerlendirmeye dönüştürür.">
+  <meta name="twitter:image" content="https://mehmetsancaktutan.github.io/icindekiler-site/social-preview.png">
+  <link rel="icon" href="../logo.png">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Yuppa — Her ürünü bir bakışta anla</title>
 </head>
 <body>
-<div class="wrap">
-
-  <header>
-    <img src="../logo.png" alt="Yuppa Logo" class="logo" style="object-fit: cover;">
-    <h1>Yuppa</h1>
-    <p class="tag">Ürünün içinde ne var, saniyeler içinde gör.</p>
-    <div style="display:flex; justify-content:center; gap:12px; margin-top:16px;">
-      <a href="#" style="display:inline-block; background:#000; color:#fff; padding:12px 24px; border-radius:12px; text-decoration:none; font-weight:600; font-size:1.05rem;"> App Store</a>
-      <a href="#" style="display:inline-block; background:#000; color:#fff; padding:12px 24px; border-radius:12px; text-decoration:none; font-weight:600; font-size:1.05rem;">▶ Google Play</a>
-    </div>
-  </header>
-
-  <div class="card">
-    <h2>Uygulama ne yapar</h2>
-    <ul>
-      <li>Gıda ve kozmetik ürünlerinin fotoğrafını çekersin</li>
-      <li>İçerik listesini analiz eder, anlaşılır bir puana dönüştürür</li>
-      <li>Katkı maddelerini, şeker, tuz, yağ ve besin değerlerini sade bir dille açıklar</li>
-      <li>Kaydettiğin alerjen ve diyet tercihlerine göre sana uygun olmayan üründe uyarır</li>
-      <li>Taradığın ürünleri geçmişte tutar, favorilerine ekleyebilirsin</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Veri yaklaşımı</h2>
-    <ul>
-      <li><strong>Hesap yok.</strong> Kayıt olmadan, giriş yapmadan kullanılır.</li>
-      <li>Tercihlerin, geçmişin ve favorilerin <strong>cihazında</strong> saklanır.</li>
-      <li>Ürün analizi için fotoğraf ve ürün bilgisi analiz servisine gönderilir.</li>
-      <li>Reklam yok, kullanıcı takibi yok.</li>
-    </ul>
-    <p style="margin:14px 0 0"><a href="privacy.html">Gizlilik politikasının tamamı →</a></p>
-  </div>
-
-  <div class="note">
-    Yuppa tıbbi bir cihaz değildir; hastalık teşhis etmez, tedavi etmez, iyileştirmez
-    veya önlemez. Sağlığınızla ilgili kararlar için bir uzmana danışın.
-  </div>
-
-  <div class="links" style="margin-top:26px">
-    <a href="privacy.html">Gizlilik Politikası</a>
-    <a class="ghost" href="terms.html">Kullanım Koşulları</a>
-    <a class="ghost" href="support.html">Destek</a>
-  </div>
-
-    <div style="text-align:center; margin-top:20px; font-size:1.2rem; display:flex; justify-content:center; gap:16px;">
-    <a href="../tr/index.html" style="text-decoration:none;">🇹🇷</a>
-    <a href="../index.html" style="text-decoration:none;">🇬🇧</a>
-    <a href="../de/index.html" style="text-decoration:none;">🇩🇪</a>
-    <a href="../fr/index.html" style="text-decoration:none;">🇫🇷</a>
-    <a href="../es/index.html" style="text-decoration:none;">🇪🇸</a>
-  </div>
-  
-  <footer>
-    <p>Aurelion Labs · <a href="mailto:desteksancaktutan@gmail.com">desteksancaktutan@gmail.com</a></p>
-  </footer>
-
-</div>
-</body>
-</html>
+  <div class="shell"><nav class="nav">
+      <a class="brand" href="index.html"><img src="../logo.png" alt="Yuppa"><span>Yuppa</span></a>
+      <div class="nav-links"><a href="#how">Nasıl çalışır</a><a href="privacy.html">Gizlilik</a><details class="language"><summary aria-label="Language">TR ▾</summary><div class="language-menu"><a href="../index.html" hreflang="en">English</a><a href="../tr/index.html" hreflang="tr" aria-current="page">Türkçe</a><a href="../de/index.html" hreflang="de">Deutsch</a><a href="../fr/index.html" hreflang="fr">Français</a><a href="../es/index.html" hreflang="es">Español</a></div></details></div>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="hero-copy-area"><div class="eyebrow">Günlük ürünlere daha net bir bakış</div><h1>Ne seçtiğini bil.</h1><p class="hero-copy">Bir gıda veya kozmetik ürününün fotoğrafını çek. Yuppa ürünü tanır, formülünü açıklar ve tercihlerine ne kadar uyduğunu karmaşık etiketlerin arkasına saklanmadan gösterir.</p>
+          <div class="actions"><a class="button" href="https://apps.apple.com/app/id6782694078" target="_blank" rel="noopener noreferrer" aria-label="App Store’dan indir"> App Store’dan indir</a><span class="button" aria-label="Google Play’den indir">▶ Google Play’den indir</span></div><div class="microcopy">App Store ve Google Play’de</div>
+        </div>
+        <div class="phone-stage" aria-label="Yuppa app preview"><div class="blob"></div>
+          <div class="floating-card one"><b>İçerik netliği</b><span>Her bileşen sade biçimde açıklanır</span></div>
+          <div class="phone"><div class="phone-screen"><div class="dynamic-island"></div><div class="screen-kicker">Değerlendirmen</div><div class="screen-title">Kanıta dayanan, anlaşılır bir sonuç.</div><div class="scan-card"><div class="product-art" aria-hidden="true">🥣</div><div class="score-row"><div class="score">82</div><div class="score-copy"><strong>İyi seçim</strong><span>Kanıtlar kontrol edildi</span></div></div><div class="pills"><span class="pill">Yüksek lif</span><span class="pill">Düşük tuz</span></div></div></div></div>
+          <div class="floating-card two"><b>Sana uygunluk</b><span>Alerjenler ve tercihler dikkate alınır</span></div>
+        </div>
+      </section>
+      <section class="section" id="how"><div class="section-head"><div class="eyebrow">Fotoğraftan netliğe</div><h2>Daha az etiket çözme. Daha bilinçli seçimler.</h2><p class="section-lead">Yuppa ürünü, kanıtı ve kişisel uygunluğu birbirinden ayırır; böylece tek bir puan, arkasındaki nedeni gizlemez.</p></div><div class="feature-grid"><article class="feature"><div class="feature-icon">⌁</div><h3>Ürünün fotoğrafını çek</h3><p>Kamerayı kullan veya galeriden seç. Barkod gerekmez.</p></article><article class="feature"><div class="feature-icon">◎</div><h3>Formülü anla</h3><p>İçerikleri, besin değerlerini, katkıları ve işlenmişlik sinyallerini sade dilde gör.</p></article><article class="feature"><div class="feature-icon">◇</div><h3>Sana uygunluğunu kontrol et</h3><p>Değerlendirmeyi kayıtlı alerjen, beslenme ve cilt tercihlerinle karşılaştır.</p></article><article class="feature"><div class="feature-icon">↗</div><h3>Kanıt gücünü gör</h3><p>Sonucun etikete, ürün kaydına veya doğrulanmış kaynaklara dayanıp dayanmadığını bil.</p></article><article class="feature"><div class="feature-icon">◌</div><h3>Önemli olanı kaydet</h3><p>Değerlendirmeleri cihazındaki özel geçmişte tut ve ürünleri daha sonrası için sabitle.</p></article><article class="feature"><div class="feature-icon">✦</div><h3>Gıda ve kozmetik</h3><p>İki farklı ürün kategorisini kendi değerlendirme kurallarıyla tek sistemde incele.</p></article></div></section>
+      <section class="section"><div class="privacy-band"><div><div class="eyebrow" style="color:#e7b780">Gizlilik odaklı tasarım</div><h2>Profilin sende kalır.</h2><p>Yuppa hesap açmadan çalışır. Kişisel tercihlerin ve kaydettiğin değerlendirmeler cihazında kalır. Ürün fotoğrafları yalnızca değerlendirme istediğinde gönderilir.</p><a class="button" style="background:#fff;color:#173f21;border-color:#fff" href="privacy.html">Gizlilik politikasını oku →</a></div><div class="privacy-list"><div class="privacy-item"><span class="check">✓</span><span>Hesap veya giriş yok</span></div><div class="privacy-item"><span class="check">✓</span><span>Reklam yok</span></div><div class="privacy-item"><span class="check">✓</span><span>Kişisel veri satışı yok</span></div><div class="privacy-item"><span class="check">✓</span><span>Kayıtlı verileri silmek için açık kontroller</span></div></div></div><p class="disclaimer">Yuppa bilgilendirme amaçlı ürün değerlendirmeleri sunar. Tıbbi cihaz değildir; ürün etiketinin veya profesyonel sağlık tavsiyesinin yerini almaz. Alerjin varsa ambalajı her zaman kendin doğrula.</p></section>
+    </main><footer class="footer">
+      <small>© 2026 Yuppa · Mehmet Sancaktutan</small>
+      <div class="footer-links"><a href="privacy.html">Gizlilik Politikası</a><a href="terms.html">Kullanım Koşulları</a><a href="support.html">Destek</a><a href="mailto:desteksancaktutan@gmail.com">desteksancaktutan@gmail.com</a></div>
+    </footer>
+  </div><script src="../site.js"></script>
+</body></html>

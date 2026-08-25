@@ -1,102 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yuppa — Produktanalyse</title>
-<style>
-  :root{
-    --mint:#E7F0EA; --mint-2:#CFE3D6; --ink:#1E3A2B; --muted:#41614F;
-    --card:#ffffff; --line:#DCE8E0; --accent:#E8722C;
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    color:var(--ink); background:linear-gradient(160deg,var(--mint),var(--mint-2));
-    min-height:100vh; line-height:1.65;
-  }
-  .wrap{max-width:760px; margin:0 auto; padding:48px 24px 64px}
-  header{text-align:center; margin-bottom:44px}
-  .logo{width:132px; height:132px; border-radius:30px; background:#fff;
-        display:flex; overflow:hidden; align-items:center; justify-content:center; margin:0 auto 20px;
-        box-shadow:0 8px 28px rgba(30,58,43,.13); font-size:74px; line-height:1}
-  h1{font-size:2.1rem; margin:0 0 8px; letter-spacing:-.02em}
-  .tag{color:var(--muted); font-size:1.06rem; margin:0}
-  .card{background:var(--card); border:1px solid var(--line); border-radius:16px;
-        padding:26px 28px; margin-bottom:20px; box-shadow:0 2px 10px rgba(30,58,43,.05)}
-  h2{font-size:1.18rem; margin:0 0 14px}
-  ul{margin:0; padding-left:20px}
-  li{margin-bottom:9px}
-  .links{display:flex; overflow:hidden; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:8px}
-  .links a{
-    display:inline-block; padding:11px 20px; border-radius:11px; text-decoration:none;
-    background:var(--ink); color:#fff; font-weight:600; font-size:.95rem;
-  }
-  .links a.ghost{background:#fff; color:var(--ink); border:1px solid var(--line)}
-  .note{background:#FFF7ED; border:1px solid #FCD9B6; border-radius:12px;
-        padding:16px 18px; font-size:.92rem; color:#7A4A18; margin-top:4px}
-  footer{text-align:center; color:var(--muted); font-size:.87rem; margin-top:36px}
-  footer a{color:var(--muted)}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F1EEE8">
+  <meta name="description" content="Fotografiere Lebensmittel und Kosmetik. Yuppa macht Inhaltsstoffe, Nährwerte und persönliche Eignung verständlich.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yuppa — Produkte auf einen Blick verstehen">
+  <meta property="og:description" content="Fotografiere Lebensmittel und Kosmetik. Yuppa macht Inhaltsstoffe, Nährwerte und persönliche Eignung verständlich.">
+  <meta property="og:image" content="https://mehmetsancaktutan.github.io/icindekiler-site/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yuppa — Produkte auf einen Blick verstehen">
+  <meta name="twitter:description" content="Fotografiere Lebensmittel und Kosmetik. Yuppa macht Inhaltsstoffe, Nährwerte und persönliche Eignung verständlich.">
+  <meta name="twitter:image" content="https://mehmetsancaktutan.github.io/icindekiler-site/social-preview.png">
+  <link rel="icon" href="../logo.png">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Yuppa — Produkte auf einen Blick verstehen</title>
 </head>
 <body>
-<div class="wrap">
-
-  <header>
-    <img src="../logo.png" alt="Yuppa Logo" class="logo" style="object-fit: cover;">
-    <h1>Yuppa</h1>
-    <p class="tag">Sieh in Sekunden, was drin ist.</p>
-    <div style="display:flex; justify-content:center; gap:12px; margin-top:16px;">
-      <a href="#" style="display:inline-block; background:#000; color:#fff; padding:12px 24px; border-radius:12px; text-decoration:none; font-weight:600; font-size:1.05rem;"> App Store</a>
-      <a href="#" style="display:inline-block; background:#000; color:#fff; padding:12px 24px; border-radius:12px; text-decoration:none; font-weight:600; font-size:1.05rem;">▶ Google Play</a>
-    </div>
-  </header>
-
-  <div class="card">
-    <h2>Was die App macht</h2>
-    <ul>
-      <li>Mache Fotos von Lebensmitteln und Kosmetika</li>
-      <li>Analysiert die Zutatenliste und wandelt sie in eine klare Bewertung um</li>
-      <li>Erklärt Zusatzstoffe, Zucker, Salz, Fett und Nährwerte einfach</li>
-      <li>Warnt vor ungeeigneten Produkten basierend auf deinen Allergen- und Diät-Präferenzen</li>
-      <li>Speichert deine gescannten Produkte im Verlauf, du kannst sie zu Favoriten hinzufügen</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Datenschutz</h2>
-    <ul>
-      <li><strong>Kein Account.</strong> Ohne Registrierung oder Login nutzen.</li>
-      <li>Deine Präferenzen, Verlauf und Favoriten werden <strong>auf dem Gerät</strong> gespeichert.</li>
-      <li>Fotos und Produktinfos werden zur Analyse an den Dienst gesendet.</li>
-      <li>Keine Werbung, kein Tracking.</li>
-    </ul>
-    <p style="margin:14px 0 0"><a href="privacy.html">Vollständige Datenschutzerklärung →</a></p>
-  </div>
-
-  <div class="note">
-    Yuppa ist kein Medizinprodukt; es diagnostiziert, behandelt oder heilt
-    keine Krankheiten. Konsultiere für Gesundheitsentscheidungen einen Experten.
-  </div>
-
-  <div class="links" style="margin-top:26px">
-    <a href="privacy.html">Datenschutzerklärung</a>
-    <a class="ghost" href="terms.html">Nutzungsbedingungen</a>
-    <a class="ghost" href="support.html">Support</a>
-  </div>
-
-    <div style="text-align:center; margin-top:20px; font-size:1.2rem; display:flex; justify-content:center; gap:16px;">
-    <a href="../tr/index.html" style="text-decoration:none;">🇹🇷</a>
-    <a href="../index.html" style="text-decoration:none;">🇬🇧</a>
-    <a href="../de/index.html" style="text-decoration:none;">🇩🇪</a>
-    <a href="../fr/index.html" style="text-decoration:none;">🇫🇷</a>
-    <a href="../es/index.html" style="text-decoration:none;">🇪🇸</a>
-  </div>
-  
-  <footer>
-    <p>Aurelion Labs · <a href="mailto:desteksancaktutan@gmail.com">desteksancaktutan@gmail.com</a></p>
-  </footer>
-
-</div>
-</body>
-</html>
+  <div class="shell"><nav class="nav">
+      <a class="brand" href="index.html"><img src="../logo.png" alt="Yuppa"><span>Yuppa</span></a>
+      <div class="nav-links"><a href="#how">So funktioniert’s</a><a href="privacy.html">Datenschutz</a><details class="language"><summary aria-label="Language">DE ▾</summary><div class="language-menu"><a href="../index.html" hreflang="en">English</a><a href="../tr/index.html" hreflang="tr">Türkçe</a><a href="../de/index.html" hreflang="de" aria-current="page">Deutsch</a><a href="../fr/index.html" hreflang="fr">Français</a><a href="../es/index.html" hreflang="es">Español</a></div></details></div>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="hero-copy-area"><div class="eyebrow">Ein klarerer Blick auf Alltagsprodukte</div><h1>Wisse, was du auswählst.</h1><p class="hero-copy">Fotografiere ein Lebensmittel oder Kosmetikprodukt. Yuppa erkennt es, erklärt die Zusammensetzung und zeigt, wie gut es zu deinen Präferenzen passt.</p>
+          <div class="actions"><a class="button" href="https://apps.apple.com/app/id6782694078" target="_blank" rel="noopener noreferrer" aria-label="Im App Store laden"> Im App Store laden</a><span class="button" aria-label="Bei Google Play">▶ Bei Google Play</span></div><div class="microcopy">Im App Store und bei Google Play</div>
+        </div>
+        <div class="phone-stage" aria-label="Yuppa app preview"><div class="blob"></div>
+          <div class="floating-card one"><b>Klare Inhaltsstoffe</b><span>Jeder Bestandteil erklärt</span></div>
+          <div class="phone"><div class="phone-screen"><div class="dynamic-island"></div><div class="screen-kicker">Deine Bewertung</div><div class="screen-title">Eine klare, evidenzbasierte Antwort.</div><div class="scan-card"><div class="product-art" aria-hidden="true">🥣</div><div class="score-row"><div class="score">82</div><div class="score-copy"><strong>Gute Wahl</strong><span>Belege geprüft</span></div></div><div class="pills"><span class="pill">Ballaststoffreich</span><span class="pill">Salzarm</span></div></div></div></div>
+          <div class="floating-card two"><b>Persönliche Eignung</b><span>Allergene und Präferenzen berücksichtigt</span></div>
+        </div>
+      </section>
+      <section class="section" id="how"><div class="section-head"><div class="eyebrow">Vom Foto zur Klarheit</div><h2>Weniger Etiketten entschlüsseln. Besser entscheiden.</h2><p class="section-lead">Yuppa trennt Produkt, Belege und persönliche Eignung, damit eine einfache Bewertung ihre Gründe nicht versteckt.</p></div><div class="feature-grid"><article class="feature"><div class="feature-icon">⌁</div><h3>Produkt fotografieren</h3><p>Nutze die Kamera oder ein vorhandenes Foto. Kein Barcode nötig.</p></article><article class="feature"><div class="feature-icon">◎</div><h3>Zusammensetzung verstehen</h3><p>Sieh Inhaltsstoffe, Nährwerte, Zusatzstoffe und Verarbeitungshinweise in klarer Sprache.</p></article><article class="feature"><div class="feature-icon">◇</div><h3>Persönliche Eignung prüfen</h3><p>Vergleiche die Bewertung mit Allergenen, Ernährung und Hautpräferenzen.</p></article><article class="feature"><div class="feature-icon">↗</div><h3>Belegstärke sehen</h3><p>Erfahre, ob das Ergebnis auf Etikett, Produktdatensatz oder bestätigten Quellen beruht.</p></article><article class="feature"><div class="feature-icon">◌</div><h3>Wichtiges speichern</h3><p>Behalte Bewertungen privat auf deinem Gerät und merke Produkte vor.</p></article><article class="feature"><div class="feature-icon">✦</div><h3>Lebensmittel und Kosmetik</h3><p>Prüfe beide Kategorien mit den jeweils passenden Bewertungsregeln.</p></article></div></section>
+      <section class="section"><div class="privacy-band"><div><div class="eyebrow" style="color:#e7b780">Datenschutz by Design</div><h2>Dein Profil bleibt bei dir.</h2><p>Yuppa funktioniert ohne Konto. Präferenzen und gespeicherte Bewertungen bleiben auf deinem Gerät. Produktfotos werden nur auf deinen Wunsch zur Bewertung übertragen.</p><a class="button" style="background:#fff;color:#173f21;border-color:#fff" href="privacy.html">Datenschutzerklärung lesen →</a></div><div class="privacy-list"><div class="privacy-item"><span class="check">✓</span><span>Kein Konto oder Login</span></div><div class="privacy-item"><span class="check">✓</span><span>Keine Werbung</span></div><div class="privacy-item"><span class="check">✓</span><span>Kein Verkauf personenbezogener Daten</span></div><div class="privacy-item"><span class="check">✓</span><span>Klare Funktionen zum Löschen gespeicherter Daten</span></div></div></div><p class="disclaimer">Yuppa bietet informative Produktbewertungen. Die App ist kein Medizinprodukt und ersetzt weder das Produktetikett noch professionelle medizinische Beratung. Prüfe bei Allergien immer selbst die Verpackung.</p></section>
+    </main><footer class="footer">
+      <small>© 2026 Yuppa von Mehmet Sancaktutan</small>
+      <div class="footer-links"><a href="privacy.html">Datenschutzerklärung</a><a href="terms.html">Nutzungsbedingungen</a><a href="support.html">Support</a><a href="mailto:desteksancaktutan@gmail.com">desteksancaktutan@gmail.com</a></div>
+    </footer>
+  </div><script src="../site.js"></script>
+</body></html>
