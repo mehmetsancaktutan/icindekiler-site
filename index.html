@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yuppa — Ürün Analizi</title>
+<style>
+  :root{
+    --mint:#E7F0EA; --mint-2:#CFE3D6; --ink:#1E3A2B; --muted:#41614F;
+    --card:#ffffff; --line:#DCE8E0; --accent:#E8722C;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:linear-gradient(160deg,var(--mint),var(--mint-2));
+    min-height:100vh; line-height:1.65;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:48px 24px 64px}
+  header{text-align:center; margin-bottom:44px}
+  .logo{width:132px; height:132px; border-radius:30px; background:#fff;
+        display:flex; overflow:hidden; align-items:center; justify-content:center; margin:0 auto 20px;
+        box-shadow:0 8px 28px rgba(30,58,43,.13); font-size:74px; line-height:1}
+  h1{font-size:2.1rem; margin:0 0 8px; letter-spacing:-.02em}
+  .tag{color:var(--muted); font-size:1.06rem; margin:0}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px;
+        padding:26px 28px; margin-bottom:20px; box-shadow:0 2px 10px rgba(30,58,43,.05)}
+  h2{font-size:1.18rem; margin:0 0 14px}
+  ul{margin:0; padding-left:20px}
+  li{margin-bottom:9px}
+  .links{display:flex; overflow:hidden; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:8px}
+  .links a{
+    display:inline-block; padding:11px 20px; border-radius:11px; text-decoration:none;
+    background:var(--ink); color:#fff; font-weight:600; font-size:.95rem;
+  }
+  .links a.ghost{background:#fff; color:var(--ink); border:1px solid var(--line)}
+  .note{background:#FFF7ED; border:1px solid #FCD9B6; border-radius:12px;
+        padding:16px 18px; font-size:.92rem; color:#7A4A18; margin-top:4px}
+  footer{text-align:center; color:var(--muted); font-size:.87rem; margin-top:36px}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="logo.png" alt="Yuppa Logo" class="logo" style="object-fit: cover;">
+    <h1>Yuppa</h1>
+    <p class="tag">Ürünün içinde ne var, saniyeler içinde gör.</p>
+    <a href="#" style="display:inline-block; margin-top:16px; background:#000; color:#fff; padding:12px 24px; border-radius:12px; text-decoration:none; font-weight:600; font-size:1.05rem;"> App Store'dan İndir</a>
+  </header>
+
+  <div class="card">
+    <h2>Uygulama ne yapar</h2>
+    <ul>
+      <li>Gıda ve kozmetik ürünlerinin fotoğrafını çekersin</li>
+      <li>İçerik listesini analiz eder, anlaşılır bir puana dönüştürür</li>
+      <li>Katkı maddelerini, şeker, tuz, yağ ve besin değerlerini sade bir dille açıklar</li>
+      <li>Kaydettiğin alerjen ve diyet tercihlerine göre sana uygun olmayan üründe uyarır</li>
+      <li>Taradığın ürünleri geçmişte tutar, favorilerine ekleyebilirsin</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Veri yaklaşımı</h2>
+    <ul>
+      <li><strong>Hesap yok.</strong> Kayıt olmadan, giriş yapmadan kullanılır.</li>
+      <li>Tercihlerin, geçmişin ve favorilerin <strong>cihazında</strong> saklanır.</li>
+      <li>Ürün analizi için fotoğraf ve ürün bilgisi analiz servisine gönderilir.</li>
+      <li>Reklam yok, kullanıcı takibi yok.</li>
+    </ul>
+    <p style="margin:14px 0 0"><a href="privacy.html">Gizlilik politikasının tamamı →</a></p>
+  </div>
+
+  <div class="note">
+    Yuppa tıbbi bir cihaz değildir; hastalık teşhis etmez, tedavi etmez, iyileştirmez
+    veya önlemez. Sağlığınızla ilgili kararlar için bir uzmana danışın.
+  </div>
+
+  <div class="links" style="margin-top:26px">
+    <a href="privacy.html">Gizlilik Politikası</a>
+    <a class="ghost" href="terms.html">Kullanım Koşulları</a>
+    <a class="ghost" href="support.html">Destek</a>
+  </div>
+
+  <footer>
+    <p>Aurelion Labs · <a href="mailto:desteksancaktutan@gmail.com">desteksancaktutan@gmail.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
